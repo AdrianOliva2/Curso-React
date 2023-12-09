@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import { useQueryParams } from "..";
 
 export default function SearchPage({ routeParams }) {
     useEffect(() => {

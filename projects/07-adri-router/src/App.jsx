@@ -3,7 +3,7 @@ import { Suspense, lazy } from 'react';
 import './App.css'
 
 import { Router } from './Router.jsx';
-import Route from './Route.jsx';
+import { Route } from './Route.jsx';
 
 const LazyHomePage = lazy(() => import('./pages/Home.jsx'))
 const LazyAboutPage = lazy(() => import('./pages/About.jsx'))

@@ -31,8 +31,6 @@ export function Router({ children, routes = [], defaultComponent: DefaultCompone
 
   const routesToUse = routes.concat(routesFromChildren).filter(Boolean);
 
-  console.log(routesToUse)
-
   const Page = routesToUse.find(({ path }) => {
     if (path === currentPath) return true;
     // hemos usado path-to-regexp
